@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Трекер Тренировок</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="app">
+        
+        <main class="container">
+            <section class="stats-section">
+                <div class="stats-grid" id="stats-cards"></div>
+            </section>
+            
+            <section class="input-section">
+                <div class="card">
+                    <h2>Добавить тренировку</h2>
+                    <div id="workout-form"></div>
+                </div>
+            </section>
+            
+            <section class="charts-section">
+                <div class="card">
+                    <h2>Графики</h2>
+                    <div class="charts-container">
+                        <div class="chart-wrapper">
+                            <canvas id="progress-chart"></canvas>
+                        </div>
+                        <div class="chart-wrapper">
+                            <canvas id="types-chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="history-section">
+                <div class="card">
+                    <h2>История</h2>
+                    <div id="workout-history"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
